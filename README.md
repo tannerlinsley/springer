@@ -28,8 +28,8 @@ A spring that generates realistic easing functions
 - Compatible with any animation library
 
 ## Demo
-- [Greensock (Codepen)](http://codepen.io/tannerlinsley/pen/dWYEwd?editors=0010)
-- [React-Move (Codepen)](http://codepen.io/tannerlinsley/pen/dWYEwd?editors=0010)
+- [Greensock + Springer (Codepen)](http://codepen.io/tannerlinsley/pen/MmyMEK)
+- [React-Move + Springer Playground (Codepen)](http://codepen.io/tannerlinsley/pen/VbayBw?editors=0010)
 
 ## Installation
 ```bash
