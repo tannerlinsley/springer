@@ -1,0 +1,63 @@
+{
+  "name": "springer",
+  "version": "0.0.1",
+  "description": "A spring that generates realistic easing functions",
+  "license": "MIT",
+  "homepage": "https://github.com/tannerlinsley/springer#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tannerlinsley/springer.git"
+  },
+  "keywords": [
+    "ease",
+    "easing",
+    "spring",
+    "physics",
+    "tension",
+    "damping",
+    "wobble"
+  ],
+  "main": "lib/index.js",
+  "files": [
+    "lib/",
+    "springer.js"
+  ],
+  "scripts": {
+    "build": "babel src --out-dir lib --source-maps inline",
+    "watch": "onchange 'src/**' -i -- npm run build",
+    "test": "standard",
+    "umd": "rimraf springer.js && webpack --config umd.webpack.js",
+    "prepublish": "npm run build && npm run umd",
+    "postpublish": "git push --tags"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-eslint": "^7.1.1",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-stage-2": "^6.13.0"
+  },
+  "standard": {
+    "parser": "babel-eslint",
+    "ignore": [
+      "node_modules",
+      "dist",
+      "lib",
+      "example",
+      "springer.js",
+      "stories",
+      "docs"
+    ]
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "stage-2"
+    ]
+  },
+  "dependencies": {
+    "onchange": "^3.2.1",
+    "rimraf": "^2.6.1",
+    "standard": "^10.0.2",
+    "webpack": "^2.4.1"
+  }
+}
