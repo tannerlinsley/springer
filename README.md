@@ -58,7 +58,7 @@ $ npm install springer --only=dev
 
 ## Example
 ```javascript
-import springer from 'springer'
+import springer from 'springer' // or 'window.Springer.default' for script-tag users
 
 const spring = springer(0.5, 0.8)
 
