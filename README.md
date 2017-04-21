@@ -70,6 +70,9 @@ console.log(spring(0.8)) // 0.99974
 console.log(spring(1))   // 1
 ```
 
+## Acknowledgements
+`Springer` is heavily inspired by [React-Motion](https://github.com/chenglou/react-motion) with he bulk of the difficult physics logic originally done by the amazing [Chenglou](https://github.com/chenglou. Thanks Cheng!
+
 ## Contributing
 To suggest a feature, create an issue if it does not already exist.
 If you would like to help develop a suggested feature follow these steps:
